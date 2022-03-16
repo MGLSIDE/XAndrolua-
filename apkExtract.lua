@@ -22,6 +22,7 @@ activity.ActionBar.hide()
 activity.setContentView(loadlayout(apkapk))
 if Build.VERSION.SDK_INT >= 23 then
   --状态栏颜色
+  --原版由代码手册app论坛用户asd394889开发，由本人修改。
   activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS).setStatusBarColor(0xFFFAFAFA);
   --状态栏暗亮色
   activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
